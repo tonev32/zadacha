@@ -8,8 +8,8 @@ namespace zadacha
 {
     public interface IPlayer
     {
-        string Name { get; set; }
-        string Position { get; set; }
+        public string Name { get; set; }
+       public  string Position { get; set; }
 
         public void SetPosition(string position);
     }

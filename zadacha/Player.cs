@@ -8,18 +8,20 @@ namespace zadacha
 {
     public class Player : IPlayer
     {
-        public string Name { get; private set; }
-        public string Position { get; private set; }
+        public string name { get; set; }
+        public string position { get;  set; }
+        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Position { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Player(string name, string position)
         {
-            Name = name;
-            Position = position;
+            name = name;
+            position = position;
         }
 
         public void SetPosition(string position)
         {
-            Position = position;
+            position = position;
         }
     }
 }
